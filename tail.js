@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual.js')
+
 const tail = function(test) {
   let result = [];
   for (let i = 1; i < test.length; i ++) {
@@ -5,8 +7,6 @@ const tail = function(test) {
   }
   console.log(result);
 };
-tail([1, 2, 3, 4, 5, 6, 7]);
-tail(["HI", "NEXT", "LAST"]);
-tail([1, "string", "number", "who am I"]);
+
 
 module.exports = tail
