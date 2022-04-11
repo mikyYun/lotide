@@ -2,8 +2,10 @@ const assertEqual = require('./assertEqual')
 
 const eqArrays = (first, second) => {
   let result = JSON.stringify(first) === JSON.stringify(second);
-  console.log(result);
-  return result;
+  if (result) {
+    return true
+  }
+  return false;
 };
-
-module.exports = assertEqual
+//trou or false
+module.exports = eqArrays

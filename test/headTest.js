@@ -1,11 +1,13 @@
-const head = require('../head.js')
-const assertEqual = require('../assertEqual')
+const assert = require('chai').assert;
+const head = require('../head');
 
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
-// assertEqual(head([516,7]), 516);
-// assertEqual(head(["This is a String"]), 5);
-// assertEqual(head([555]), 5);
-// assertEqual(head(["11",15,7]), 5);
-// assertEqual(head(["11",15,7]), '11');
-// assertEqual(head([]), 5);
+// const assertEqual = require('../assertEqual')
+
+describe("#head", () => {
+  it('returns 1 for [1, 2, 3]', () => {
+    assert.strictEqual(head([1, 2, 3]), 1)
+  }),
+  it("returns '5' for ['5']", () => {
+    assert.strictEqual(head(['5']), '5'); 
+  });
+})
