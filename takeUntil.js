@@ -24,7 +24,6 @@ const takeUntil = function(array, callback) {
       return result
     }
     result.push(array[i])
-
   };
   // return result;
 }
