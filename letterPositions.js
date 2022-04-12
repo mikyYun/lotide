@@ -17,23 +17,17 @@ const letterPositions = function(sentence) {
   let results = {};
   // logic to update results here
 
-
   for (let i = 0; i < sentence.length; i ++) {
-    // console.log(sentence[i])
     if (sentence[i] !== ' ') {
       if (!results[sentence[i]]) {
-        results[sentence[i]] = [i];
+        results[sentence[i]] = 1;
       } else {
-        results[sentence[i]].push(i);
+        results[sentence[i]] ++;
       }
     }
   }
-  console.log(results);
+  console.log(results)
   return results;
 };
-letterPositions("hello");
-assertArraysEqual(letterPositions("hello")["l"], [2, 3]);
-assertArraysEqual(letterPositions("hello")["l"], [2]);
-letterPositions("lighthouse in the house");
-assertArraysEqual(letterPositions("lighthouse in the house").h, [3, 5, 15, 18]);
-assertArraysEqual(letterPositions("lighthouse in the house").h, [3, 5, '', 18]);
+
+module.exports = letterPositions

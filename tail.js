@@ -8,7 +8,6 @@ const tail = function(test) {
   for (let i = 1; i < test.length; i ++) {
     result.push(test[i]);
   }
-  // console.log(result);
   return result
 };
 
