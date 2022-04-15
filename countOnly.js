@@ -1,11 +1,11 @@
 
-const countOnly = function(allItems, itemsToCount) {
-  console.log(itemsToCount['Jason'])  
+const countOnly = function (allItems, itemsToCount) {
+  console.log(itemsToCount['Jason']);
   const result = {};
   for (const item of allItems) {
     if (itemsToCount[item] === true && item in itemsToCount) {
       if (result[item]) {
-        result[item] ++;
+        result[item]++;
       } else {
         result[item] = 1;
       }
@@ -13,7 +13,7 @@ const countOnly = function(allItems, itemsToCount) {
   }
   console.log(result);
   return result;
-}
+};
 
 const firstNames = [
   "Karl",
@@ -29,4 +29,4 @@ const firstNames = [
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-module.exports = countOnly
+module.exports = countOnly;

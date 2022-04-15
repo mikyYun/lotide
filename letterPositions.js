@@ -13,21 +13,21 @@ const eqArrays = (first, second) => {
   return result;
 };
 
-const letterPositions = function(sentence) {
+const letterPositions = function (sentence) {
   let results = {};
   // logic to update results here
 
-  for (let i = 0; i < sentence.length; i ++) {
+  for (let i = 0; i < sentence.length; i++) {
     if (sentence[i] !== ' ') {
       if (!results[sentence[i]]) {
         results[sentence[i]] = 1;
       } else {
-        results[sentence[i]] ++;
+        results[sentence[i]]++;
       }
     }
   }
-  console.log(results)
+  console.log(results);
   return results;
 };
 
-module.exports = letterPositions
+module.exports = letterPositions;

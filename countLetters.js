@@ -14,7 +14,6 @@ const countLetters = (sentence) => {
     } else {
       countResult[letter] = 1;
     }
-    // console.log(letter)
   }
   console.log(countResult);
   return countResult;
