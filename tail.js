@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual.js');
-
 const tail = function (test) {
   let result = [];
   if (test.length < 2) {
@@ -10,6 +8,5 @@ const tail = function (test) {
   }
   return result;
 };
-
 
 module.exports = tail;

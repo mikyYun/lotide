@@ -10,8 +10,4 @@ const map = function (array, callback) {
   }
   return results;
 };
-const words = ["ground", "control", "to", "major", "tom"];
-const secondWords = ["Hi", "First Letter", "let's find", 123456, "9Test"];
-map(secondWords, (secondWord) => secondWord[0]);
-// map(words, (word) => word[0])
 module.exports = map;
