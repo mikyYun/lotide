@@ -8,4 +8,3 @@ module.exports = {
   tail,
   middle
 };
-

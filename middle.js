@@ -2,7 +2,6 @@ const eqArrays = require('./eqArrays');
 
 const assertArraysEqual = require('./assertArraysEqual');
 
-// check undefined first 
 
 const middle = (arr) => {
   let result = [];
